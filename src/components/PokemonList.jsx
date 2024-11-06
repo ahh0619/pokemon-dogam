@@ -2,7 +2,7 @@ import PokemonCard from "./PokemonCard";
 import MOCK_DATA from "../data/MOCK_DATA";
 import { PokemonListMain } from "../styles/PokemonListStyles";
 
-const PokemonList = ({ handelAddPokemon, handleRemovePokemon }) => {
+const PokemonList = () => {
   return (
     <PokemonListMain>
       {MOCK_DATA.map((pokemon) => (
@@ -11,8 +11,6 @@ const PokemonList = ({ handelAddPokemon, handleRemovePokemon }) => {
           id={pokemon.id}
           korean_name={pokemon.korean_name}
           img_url={pokemon.img_url}
-          handelAddPokemon={handelAddPokemon}
-          handleRemovePokemon={handleRemovePokemon}
           onDashboard={false}
         />
       ))}

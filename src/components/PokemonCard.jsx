@@ -7,17 +7,13 @@ import {
   PokemonCardName,
   PokemonCardNumber,
 } from "../styles/PokemonCardStyles";
+import { useContext } from "react";
+import { PokemonContext } from "../shared/PokemonContext";
 
-const PokemonCard = ({
-  id,
-  korean_name,
-  img_url,
-  handelAddPokemon,
-  handleRemovePokemon,
-  onDashboard,
-}) => {
+const PokemonCard = ({ id, korean_name, img_url, onDashboard }) => {
   const nav = useNavigate();
   const formattedId = id.toString().padStart(3, "0");
+  const { handelAddPokemon, handleRemovePokemon } = useContext(PokemonContext);
 
   const handleButtonAdd = (e) => {
     e.stopPropagation();
@@ -31,7 +27,7 @@ const PokemonCard = ({
   return (
     <PokemonCardItem
       onClick={() => {
-        nav(`/detail/${id}`);
+        nav(`/pokemon-detail/${id}`);
       }}
     >
       <PokemonCardImg src={img_url} />

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Dex from "../pages/Dex";
-import Detail from "../pages/detail";
+import PokemonDetail from "../pages/PokemonDetail";
 
 function AppRouter() {
   return (
@@ -9,7 +9,7 @@ function AppRouter() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dex" element={<Dex />} />
-        <Route path="/detail/:id" element={<Detail />} />
+        <Route path="/pokemon-detail/:id" element={<PokemonDetail />} />
       </Routes>
     </Router>
   );
