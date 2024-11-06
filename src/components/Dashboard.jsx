@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { PokemonContext } from "../shared/PokemonContext";
 import {
   DashboardImg,
   DashboardItem,
@@ -7,7 +9,8 @@ import {
 } from "../styles/DashboardStyles";
 import PokemonCard from "./PokemonCard";
 
-const Dashboard = ({ selectedPokemon, handleRemovePokemon }) => {
+const Dashboard = () => {
+  const { selectedPokemon } = useContext(PokemonContext);
   return (
     <DashboardMain>
       <DashboardTitle>나만의 포켓몬</DashboardTitle>
@@ -18,8 +21,6 @@ const Dashboard = ({ selectedPokemon, handleRemovePokemon }) => {
             id={pokemon.id}
             korean_name={pokemon.korean_name}
             img_url={pokemon.img_url}
-            selectedPokemon={selectedPokemon}
-            handleRemovePokemon={handleRemovePokemon}
             onDashboard={true}
           />
         ))}
