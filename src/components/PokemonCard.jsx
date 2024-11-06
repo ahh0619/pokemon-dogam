@@ -31,7 +31,7 @@ const PokemonCard = ({
   return (
     <PokemonCardItem
       onClick={() => {
-        nav(`/detail/${id}`);
+        nav(`/pokemon-detail/${id}`);
       }}
     >
       <PokemonCardImg src={img_url} />

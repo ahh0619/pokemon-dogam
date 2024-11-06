@@ -6,9 +6,9 @@ import {
   DetailInfo,
   DetailMain,
   DetailTitle,
-} from "../styles/DetailStyles";
+} from "../styles/PokemonDetailStyles";
 
-const Detail = () => {
+const PokemonDetail = () => {
   const { id } = useParams();
   const nav = useNavigate();
 
@@ -33,4 +33,4 @@ const Detail = () => {
   );
 };
 
-export default Detail;
+export default PokemonDetail;
