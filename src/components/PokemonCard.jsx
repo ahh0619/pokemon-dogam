@@ -15,7 +15,7 @@ const PokemonCard = ({ id, korean_name, img_url, onDashboard }) => {
   const formattedId = id.toString().padStart(3, "0");
   const { handelAddPokemon, handleRemovePokemon } = useContext(PokemonContext);
 
-  const handleButtonAdd = (e) => {
+  const handleButton = (e) => {
     e.stopPropagation();
     if (onDashboard) {
       handleRemovePokemon(id);
@@ -35,7 +35,7 @@ const PokemonCard = ({ id, korean_name, img_url, onDashboard }) => {
         <PokemonCardName>{korean_name}</PokemonCardName>
         <PokemonCardNumber>No. {formattedId}</PokemonCardNumber>
       </PokemonCardInfoWrap>
-      <PokemonCardButton onClick={handleButtonAdd}>
+      <PokemonCardButton onClick={handleButton}>
         {onDashboard ? "삭제" : "추가"}
       </PokemonCardButton>
     </PokemonCardItem>
