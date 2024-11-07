@@ -1,5 +1,5 @@
 # 🕊 리액트 숙련주차 개인과제 포켓몬 도감 만들기
-![image](https://github.com/user-attachments/assets/7c981e7a-5e06-4c91-8cd2-2169f9d98d91)
+                   ![image](https://github.com/user-attachments/assets/7c981e7a-5e06-4c91-8cd2-2169f9d98d91)
 ![1](https://github.com/user-attachments/assets/d0c5a586-8ea4-40f5-b19f-42c5b7527ea7)
 ![2](https://github.com/user-attachments/assets/e846b783-8e60-4777-93c6-3450735f2fe5)
 
