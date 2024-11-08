@@ -5,7 +5,7 @@ const Home = () => {
   const nav = useNavigate();
   return (
     <MainPage>
-      <PokemonLogo src="./pokemon-logo-RN0wntMB.png" />
+      <PokemonLogo src="/pokemon-logo-RN0wntMB.png" />
       <MainButton
         onClick={() => {
           nav("/dex");
