@@ -31,7 +31,6 @@ const Dex = () => {
         handleRemovePokemon={handleRemovePokemon}
       />
       <PokemonList
-        selectedPokemon={selectedPokemon}
         handelAddPokemon={handelAddPokemon}
         handleRemovePokemon={handleRemovePokemon}
       />
