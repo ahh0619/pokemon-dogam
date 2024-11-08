@@ -19,7 +19,7 @@ const PokemonCard = ({
   const nav = useNavigate();
   const formattedId = id.toString().padStart(3, "0");
 
-  const handleButtonAdd = (e) => {
+  const handleButton = (e) => {
     e.stopPropagation();
     if (onDashboard) {
       handleRemovePokemon(id);
@@ -39,7 +39,7 @@ const PokemonCard = ({
         <PokemonCardName>{korean_name}</PokemonCardName>
         <PokemonCardNumber>No. {formattedId}</PokemonCardNumber>
       </PokemonCardInfoWrap>
-      <PokemonCardButton onClick={handleButtonAdd}>
+      <PokemonCardButton onClick={handleButton}>
         {onDashboard ? "삭제" : "추가"}
       </PokemonCardButton>
     </PokemonCardItem>
