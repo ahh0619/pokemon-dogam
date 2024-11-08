@@ -26,7 +26,7 @@ const Dashboard = () => {
         ))}
         {Array.from({ length: 6 - selectedPokemon.length }).map((_, index) => (
           <DashboardItem key={`empty-${index}`}>
-            <DashboardImg src={"../public/pokeball-13iwdk7Y.png"} />
+            <DashboardImg src={"/pokeball-13iwdk7Y.png"} />
           </DashboardItem>
         ))}
       </DashboardList>
