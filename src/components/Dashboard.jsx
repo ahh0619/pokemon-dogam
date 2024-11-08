@@ -32,5 +32,4 @@ const Dashboard = ({ selectedPokemon, handleRemovePokemon }) => {
     </DashboardMain>
   );
 };
-
 export default Dashboard;

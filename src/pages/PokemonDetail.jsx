@@ -11,7 +11,6 @@ import {
 const PokemonDetail = () => {
   const { id } = useParams();
   const nav = useNavigate();
-
   const selectedPokemon = MOCK_DATA.find(
     (pokemon) => pokemon.id === Number(id)
   );
