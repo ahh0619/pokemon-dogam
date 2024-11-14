@@ -17,11 +17,9 @@
 ## 💻기술 스택
 
 <div style="display:flex; justify-contents: center;">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
-  <img src="https://img.shields.io/badge/react-0769AD?style=for-the-badge&logo=react&logoColor=white">  
-  <img src="https://img.shields.io/badge/styledcomponent-1572B6?style=for-the-badge&logo=styledcomponent&logoColor=white"> 
-  <img src="https://img.shields.io/badge/git-orange?style=for-the-badge&logo=git&logoColor=white">
+  <img alt="React" src="https://img.shields.io/badge/React-61DAFB.svg?&style=for-the-badge&logo=React&logoColor=black"/>
+  <img alt="styledcomponents" src="https://img.shields.io/badge/styledcomponents-DB7093.svg?&style=for-the-badge&logo=styledcomponents&logoColor=black"/>
+  <img alt="redux" src="https://img.shields.io/badge/redux-764ABC.svg?style=for-the-badge&logo=redux&logoColor=black"/>
  
 </div>
 <br>
